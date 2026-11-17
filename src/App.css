@@ -1,0 +1,329 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background: #fafafa;
+  color: #262626;
+  line-height: 1.5;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font: inherit;
+  cursor: pointer;
+  background: white;
+  color: #262626;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 8px 14px;
+}
+
+button:hover {
+  background: #eee;
+}
+
+button:disabled {
+  opacity: .5;
+  cursor: default;
+}
+
+a:focus-visible,
+button:focus-visible,
+summary:focus-visible {
+  outline: 2px solid #52796f;
+  outline-offset: 3px;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.contenedor {
+  width: 90%;
+  max-width: 1000px;
+  margin: auto;
+}
+
+header {
+  background: white;
+  border-bottom: 1px solid #ddd;
+}
+
+.cabecera {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  gap: 12px;
+}
+
+.marca {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.marca span {
+  color: #52796f;
+}
+
+.cabecera-texto {
+  font-size: 13px;
+  color: #666;
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding-bottom: 15px;
+}
+
+.menu a {
+  font-size: 14px;
+  padding: 6px 12px;
+  border-radius: 4px;
+}
+
+.menu a:hover {
+  background: #eee;
+}
+
+.menu a.active {
+  background: #52796f;
+  color: white;
+}
+
+.contenido {
+  flex: 1;
+  padding: 30px 0;
+}
+
+.portada {
+  padding: 20px 0;
+  margin-bottom: 25px;
+  border-bottom: 1px solid #ddd;
+}
+
+.etiqueta {
+  font-size: 12px;
+  color: #52796f;
+  text-transform: uppercase;
+}
+
+h1,
+.portada h1 {
+  font-size: 30px;
+  font-weight: 600;
+  margin: 12px 0;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+h3 {
+  font-size: 17px;
+}
+
+.grilla {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr));
+  gap: 15px;
+}
+
+.categoria,
+.libro {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.categoria {
+  padding: 20px;
+}
+
+.categoria:hover {
+  border-color: #52796f;
+  background: #f5f7f6;
+}
+
+.categoria h3 {
+  margin: 8px 0;
+}
+
+.numero {
+  font-size: 13px;
+  color: #52796f;
+}
+
+.categoria > span:last-child,
+.subtitulo,
+.volver,
+.detalle p {
+  color: #666;
+  font-size: 14px;
+}
+
+.volver:hover {
+  text-decoration: underline;
+}
+
+.libro {
+  overflow: hidden;
+}
+
+.lomo {
+  min-height: 120px;
+  padding: 20px;
+  background: #e8eeeb;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.lomo-1 {
+  background: #eeeae4;
+}
+
+.lomo-2 {
+  background: #e7ebef;
+}
+
+.lomo h2 {
+  font-size: 20px;
+  margin: 8px 0;
+}
+
+.lomo span,
+.lomo p {
+  font-size: 12px;
+  margin: 0;
+}
+
+.detalle {
+  padding: 15px;
+}
+
+.detalle h3 {
+  margin: 0;
+}
+
+.detalle p {
+  margin: 6px 0 12px;
+}
+
+.detalle strong {
+  font-size: 17px;
+}
+
+.estado {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 15px;
+  margin: 15px 0;
+  overflow-wrap: anywhere;
+}
+
+.estado p {
+  margin: 8px 0;
+}
+
+.error {
+  background: #fff5f5;
+  border-color: #e6baba;
+  color: #a12d2d;
+}
+
+.spinner {
+  width: 16px;
+  height: 16px;
+  border: 2px solid #ddd;
+  border-top-color: #52796f;
+  border-radius: 50%;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 8px;
+  animation: giro .8s linear infinite;
+}
+
+@keyframes giro {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.acciones {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.pruebas {
+  margin-top: 30px;
+  padding-top: 15px;
+  border-top: 1px solid #ddd;
+  font-size: 14px;
+  color: #666;
+}
+
+.pruebas summary {
+  cursor: pointer;
+}
+
+footer {
+  background: white;
+  border-top: 1px solid #ddd;
+}
+
+.pie {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 15px 0;
+  font-size: 13px;
+  color: #666;
+}
+
+.inicio {
+  max-width: 720px;
+  margin: 40px auto;
+  padding: 15px;
+}
+
+@media (max-width: 520px) {
+  .cabecera-texto {
+    display: none;
+  }
+
+  .grilla {
+    grid-template-columns: 1fr;
+  }
+
+  h1,
+  .portada h1 {
+    font-size: 25px;
+  }
+
+  .contenido {
+    padding: 20px 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .spinner {
+    animation: none;
+  }
+}
