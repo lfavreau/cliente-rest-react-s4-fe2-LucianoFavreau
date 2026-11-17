@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/cliente-rest-react-s4-fe2-LucianoFavreau/static/css/main.4e986e7f.css",
+    "main.js": "/cliente-rest-react-s4-fe2-LucianoFavreau/static/js/main.07f43e7f.js",
+    "static/js/209.dc65e0a9.chunk.js": "/cliente-rest-react-s4-fe2-LucianoFavreau/static/js/209.dc65e0a9.chunk.js",
+    "static/js/918.eef7f07d.chunk.js": "/cliente-rest-react-s4-fe2-LucianoFavreau/static/js/918.eef7f07d.chunk.js",
+    "static/js/825.77c3e560.chunk.js": "/cliente-rest-react-s4-fe2-LucianoFavreau/static/js/825.77c3e560.chunk.js",
+    "index.html": "/cliente-rest-react-s4-fe2-LucianoFavreau/index.html",
+    "main.4e986e7f.css.map": "/cliente-rest-react-s4-fe2-LucianoFavreau/static/css/main.4e986e7f.css.map",
+    "main.07f43e7f.js.map": "/cliente-rest-react-s4-fe2-LucianoFavreau/static/js/main.07f43e7f.js.map",
+    "209.dc65e0a9.chunk.js.map": "/cliente-rest-react-s4-fe2-LucianoFavreau/static/js/209.dc65e0a9.chunk.js.map",
+    "918.eef7f07d.chunk.js.map": "/cliente-rest-react-s4-fe2-LucianoFavreau/static/js/918.eef7f07d.chunk.js.map",
+    "825.77c3e560.chunk.js.map": "/cliente-rest-react-s4-fe2-LucianoFavreau/static/js/825.77c3e560.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4e986e7f.css",
+    "static/js/main.07f43e7f.js"
+  ]
+}
